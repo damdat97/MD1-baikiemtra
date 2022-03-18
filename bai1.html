@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[[3,3,4,15,2],[23,3,31,6,8]];
+    // câu a
+    for (i=0;i<arr.length;i++){
+        for (j=0;j<arr[i].length;j++){
+            if (arr[i][j] %2 == 0){
+                document.write(arr[i][j] + '<br>')
+            }
+        }
+    }
+
+//    câu b
+    let count=0
+    for (i=0;i<arr.length;i++){
+        for (j=0;j<arr[i].length;j++){
+            if (arr[i][j] %2 == 0) {
+                count++
+            }
+        }
+    }document.write('Số các phần tử chẵn là: ' +count + '<br>')
+
+//    câu c
+    let product=1
+    for (i=0;i<arr.length;i++){
+        for (j=0;j<arr[i].length;j++){
+            if (arr[i][j] %2 != 0) {
+                product = product * arr[i][j]
+            }
+        }
+    }document.write('Tích các phần tử giá trị lẻ: ' +product + '<br>');
+
+//    câu d
+    let max=arr[0][0]
+    for (i=0;i<arr.length;i++){
+        for (j=0;j<arr[i].length;j++){
+            if (max<arr[i][j]) {
+                max=arr[i][j]
+            }
+        }
+    }document.write('Max của mảng: ' +max + '<br>')
+
+//    câu e
+    let min=arr[0][2]
+    for (i=0;i<arr.length;i++){
+        for (j=0;j<arr[i].length;j++){
+            if (arr[i][j] %2 == 0 && arr[i][j] < min) {
+                min= arr[i][j]
+            }
+        }
+    } document.write(min)
+
+</script>
+</body>
+</html>
