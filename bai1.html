@@ -74,8 +74,8 @@
     for (let i = 0; i < arr.length; i++) {
         let min1 = arr[0][i];
         for (let j = 0; j < arr[i].length; j++) {
-            if (arr[j][i] < min1) {
-                min1 = arr[j][i]
+            if (arr[i][j] < min1) {
+                min1 = arr[i][j]
             }
         }
         textg += min1 + "<br>";
